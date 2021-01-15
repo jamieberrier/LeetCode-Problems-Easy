@@ -16,7 +16,7 @@ var sortedSquares = function(nums) {
   let head = 0
   let tail = nums.length - 1
   
-  for(const i of nums) {
+  while(head <= tail) {
     if(nums[head]**2 > nums[tail]**2) {
       // increase head after push
       result.push(nums[head++]**2)
