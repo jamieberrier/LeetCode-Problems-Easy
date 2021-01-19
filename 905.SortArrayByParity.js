@@ -7,3 +7,18 @@
 // 1 <= A.length <= 5000
 // 0 <= A[i] <= 5000
 
+/**
+ * @param {number[]} A
+ * @return {number[]}
+ */
+var sortArrayByParity = function(A) {
+  let result = []
+  
+  A.forEach(i => {
+      // if even, add to beginning
+      // if odd, add to end
+      !(i % 2) ? result.unshift(i) : result.push(i)
+  })
+  
+  return result
+};
