@@ -34,9 +34,13 @@ Constraints:
  * @return {number}
  */
 var removeElement = function(nums, val) {
-  for(let i = 0; i < nums.length; i++) {
-      nums[i] === val ? nums.splice(i--, 1) : null
-  }
+  // for(let i = 0; i < nums.length; i++) {
+  //   nums[i] === val ? nums.splice(i--, 1) : null
+  // }
   
+  while(nums.indexOf(val, 0) >= 0) {
+    nums.splice(nums.indexOf(val, 0), 1)
+  }
+
   return nums.length
 };
