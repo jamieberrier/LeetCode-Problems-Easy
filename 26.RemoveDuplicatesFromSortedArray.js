@@ -26,3 +26,13 @@ Constraints:
 -104 <= nums[i] <= 104
 nums is sorted in ascending order.
 */
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var removeDuplicates = function(nums) {
+  for(let i = 0; i < nums.length; i++) {
+      if(nums[i] === nums[i+1]) nums.splice(i--, 1)
+  }
+};
