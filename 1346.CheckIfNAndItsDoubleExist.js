@@ -4,8 +4,8 @@
  */
 var checkIfExist = function(arr) {
   /*
-    Runtime: 80 ms, faster than 76.42% of JavaScript submissions
-    Memory Usage: 38.9 MB, less than 67.91% of JavaScript submissions
+    Runtime: 68 ms, faster than 99.66% of JavaScript submissions
+    Memory Usage: 38.8 MB, less than 84.13% of JavaScript submissions
   */
 
   // edge cases
@@ -21,9 +21,9 @@ var checkIfExist = function(arr) {
       if(arr[i] % 2 === 0) {
           if(elements.includes(arr[i] / 2)) return true
       }
+
       elements[i] = arr[i]
   }
-  
   // not found, return false
   return false
 };
