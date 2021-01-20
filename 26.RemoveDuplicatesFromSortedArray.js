@@ -36,6 +36,7 @@ var removeDuplicates = function(nums) {
       if(nums[i] === nums[i+1]) nums.splice(i--, 1)
   }
 
+  // if(nums.length === 0) return 0
   // let i = 0
     
   //   nums.forEach(elem => {
