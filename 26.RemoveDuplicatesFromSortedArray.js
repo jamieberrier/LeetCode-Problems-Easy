@@ -32,9 +32,16 @@ nums is sorted in ascending order.
  * @return {number}
  */
 var removeDuplicates = function(nums) {
+  //   Runtime: 100 ms, faster than 55.54% of JavaScript online submissions for Remove Duplicates from Sorted Array.
+  //    Memory Usage: 40.6 MB, less than 86.73% of JavaScript online submissions for Remove Duplicates from Sorted Array.
+  if(nums.length === 0) return 0
+
   for(let i = 0; i < nums.length; i++) {
       if(nums[i] === nums[i+1]) nums.splice(i--, 1)
   }
+
+  //   Runtime: 92 ms, faster than 81.55% of JavaScript online submissions for Remove Duplicates from Sorted Array.
+  //   Memory Usage: 41.3 MB, less than 19.75% of JavaScript online submissions for Remove Duplicates from Sorted Array.
 
   // if(nums.length === 0) return 0
   // let i = 0
