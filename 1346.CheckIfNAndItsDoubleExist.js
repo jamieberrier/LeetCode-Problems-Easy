@@ -3,6 +3,11 @@
  * @return {boolean}
  */
 var checkIfExist = function(arr) {
+  /*
+    Runtime: 80 ms, faster than 76.42% of JavaScript submissions
+    Memory Usage: 38.9 MB, less than 67.91% of JavaScript submissions
+  */
+
   // edge cases
   if(arr.length == 0) return false
   
