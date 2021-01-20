@@ -19,4 +19,10 @@ int len = removeDuplicates(nums);
 for (int i = 0; i < len; i++) {
     print(nums[i]);
 }
+
+Constraints:
+
+0 <= nums.length <= 3 * 104
+-104 <= nums[i] <= 104
+nums is sorted in ascending order.
 */
