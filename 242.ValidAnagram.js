@@ -39,3 +39,6 @@ var isAnagram = function(s, t) {
   // if make it thru loop, return true
   return true;
 };
+
+// Runtime: 92 ms, faster than 82.68% of JavaScript online submissions for Valid Anagram.
+// Memory Usage: 41.6 MB, less than 44.70% of JavaScript online submissions for Valid Anagram.
